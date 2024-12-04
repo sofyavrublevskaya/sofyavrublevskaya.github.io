@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+body {
+  margin: 0px;
+  background-color: #fff6f9;
+}
+/* Шапка сайта */
+li {
+  font-family: "Raleway";
+  list-style: none;
+  margin-right: 40px;
+}
+ul {
+  display: flex;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  background-color: #efcdd6;
+  border-radius: 20px;
+  margin-top: 22px;
+  margin-bottom: 40px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+a {
+  color: white;
+  font-family: "Raleway";
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.Heading {
+  font-family: "Raleway";
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  background-color: #efcdd6;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  border-color: #efcdd6;
+}
+/* Типо мини блок с услугами */
+.PersonalYslugi {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  /* justify-content: space-between; */
+}
+.textContainer {
+  margin-left: 70px;
+  margin-right: 200px;
+  /* margin-bottom: 60px; */
+}
+.Glavpersonal {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 32px;
+  text-align: left;
+  margin-top: 45px;
+  margin-bottom: 5px;
+}
+.punkts {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 20px;
+  text-align: left;
+  line-height: 30px;
+}
+.Bacground {
+  background-color: #ffe8ed;
+  border-radius: 20px 20px 100px;
+  margin-bottom: 60px;
+}
+.BacgroundTwo {
+  background-color: #ffe8ed;
+  border-radius: 20px 100px 20px;
+  margin-bottom: 60px;
+}
+/* Кнопки */
+.button-container {
+  display: flex;
+  gap: 50px; /* Интервал между кнопками */
+  justify-content: left;
+  height: 70px;
+  margin-top: 30px;
+}
+.buttonprice {
+  /* font-family: "Raleway"; */
+  font-weight: 500;
+  font-size: 24px;
+  padding: 2px 35px;
+  text-align: center;
+  border-radius: 20px;
+  color: #efcdd6;
+  background-color: white;
+  border-color: #efcdd6;
+}
+.TExtOkoloButton {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 33px;
+  text-align: left;
+  /* padding-bottom: 5px; */
+  margin-top: 15px;
+}
+/* Подвал сайта */
+#Podval {
+  height: 370px;
+  background-color: #efcdd6;
+}
+.PodvalText {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 24px;
+  text-align: left;
+  color: #fff;
+  line-height: 45px;
+  margin-top: 60px;
+}
+.PodvalTextTwo {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 24px;
+  text-align: left;
+  color: #fff;
+  line-height: 40px;
+  margin-top: 40px;
+}
+.imgpodval {
+  margin-left: 60%;
+  margin-bottom: 20px;
+  /* margin-top: 20px; */
+}
+.imgpodval1 {
+  margin-top: 60px;
+  margin-left: 60%;
+  margin-bottom: 20px;
+}
+.imgpodval3 {
+  margin-left: 60%;
+  margin-bottom: 17px;
+}
+.textcols {
+  white-space: nowrap;
+  font-size: 0;
+}
+.textcols-item {
+  white-space: normal;
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  margin-right: 65px;
+  font-size: 14px;
+}
+.textcols .textcols-item:last-child {
+  margin-right: 0;
+}
