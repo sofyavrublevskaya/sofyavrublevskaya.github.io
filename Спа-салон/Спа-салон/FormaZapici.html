@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Записаться</title>
+    <link rel="stylesheet" href="./FormaZapici.css" />
+  </head>
+
+  <body>
+    <!-- Шапка сайта -->
+    <div class="container">
+      <header>
+        <img
+          src="./Glavnayapicture/логотипAFRODITA.png"
+          alt="LogotipAFRODITA"
+          width="75px"
+          height="104px"
+        />
+        <nav>
+          <ul>
+            <li><a href="./Glavnaya.html">О нас</a></li>
+            <li><a href="./yslygi.html">Услуги</a></li>
+            <li><a href="./Sertificates.html">Сертификаты</a></li>
+            <li><a href="./Sales.html">Акции</a></li>
+            <li><a href="Glavnaya.html#Connection">Контакты</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <section id="Forma">
+      <div class="container">
+        <h1 class="Heading">Записаться</h1>
+        <div class="booking-form">
+          <h2>Записаться</h2>
+          <p class="TextForm">
+            Наш менеджер перезвонит в течение 5 минут, уточнит потребности и
+            согласует время.
+          </p>
+          <!-- <form>
+            <div class="form-group">
+              <p>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Имя"
+                />
+              </p>
+            </div>
+            <div class="form-group">
+              <p>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  placeholder="Телефон"
+                />
+              </p>
+            </div>
+            <div class="form-group">
+              <p>
+                <input
+                  type="date"
+                  id="date"
+                  name="date"
+                  required
+                  placeholder="Дата записи"
+                />
+              </p>
+            </div>
+            <h2>Выберите услугу</h2>
+            <div class="form-group">
+              <p>
+                <input
+                  type="text"
+                  id="service"
+                  name="service"
+                  required
+                  placeholder="Выберите услугу"
+                />
+              </p>
+            </div>
+            <div class="form-group">
+              <p>
+                <textarea
+                  id="comments"
+                  name="comments"
+                  placeholder="Комментарий"
+                ></textarea>
+              </p>
+            </div>
+            <div class="form-group gift-certificate">
+              <input
+                type="checkbox"
+                id="gift-certificate"
+                name="gift-certificate"
+              />
+              <label for="gift-certificate"
+                >У меня есть подарочный сертификат</label
+              >
+            </div>
+            <!-- <button type="submit" class="submit-btn">Отправить</button> -->
+          <!-- <div class="buttonc">
+              <button class="buttonprice">Отправить</button>
+            </div>
+          </form> -->
+          <form id="myForm">
+            <div class="form-group">
+              <p>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Имя"
+                />
+              </p>
+            </div>
+            <div class="form-group">
+              <p>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  placeholder="Телефон"
+                />
+              </p>
+            </div>
+            <div class="form-group">
+              <p>
+                <input
+                  type="date"
+                  id="date"
+                  name="date"
+                  required
+                  placeholder="Дата записи"
+                />
+              </p>
+            </div>
+            <h2>Выберите услугу</h2>
+            <div class="form-group">
+              <p>
+                <input
+                  type="text"
+                  id="service"
+                  name="service"
+                  required
+                  placeholder="Выберите услугу"
+                />
+              </p>
+            </div>
+            <div class="form-group">
+              <p>
+                <textarea
+                  id="comments"
+                  name="comments"
+                  placeholder="Комментарий"
+                ></textarea>
+              </p>
+            </div>
+            <div class="form-group gift-certificate">
+              <input
+                type="checkbox"
+                id="gift-certificate"
+                name="gift-certificate"
+              />
+              <label for="gift-certificate"
+                >У меня есть подарочный сертификат</label
+              >
+            </div>
+            <div class="buttonc">
+              <button type="submit" class="buttonprice">Отправить</button>
+            </div>
+            <span class="error" id="formError"></span>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script>
+      const form = document.getElementById("myForm");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Отменить стандартное поведение отправки формы
+
+        // Сброс ошибок
+        document.getElementById("formError").textContent = "";
+
+        // Получение значений из полей
+        const name = document.getElementById("name").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const date = document.getElementById("date").value;
+        const service = document.getElementById("service").value.trim();
+        const comments = document.getElementById("comments").value.trim();
+        let isValid = true;
+
+        // Проверка имени
+        if (name === "") {
+          document.getElementById("formError").textContent +=
+            "Имя обязательно для заполнения. ";
+          isValid = false;
+        }
+
+        // Проверка телефона
+        if (phone === "") {
+          document.getElementById("formError").textContent +=
+            "Телефон обязателен для заполнения. ";
+          isValid = false;
+        } else if (!/^\+?[0-9\s\-()]+$/.test(phone)) {
+          document.getElementById("formError").textContent +=
+            "Введите корректный номер телефона. ";
+          isValid = false;
+        }
+
+        // Проверка даты
+        if (date === "") {
+          document.getElementById("formError").textContent +=
+            "Дата записи обязательна для заполнения. ";
+          isValid = false;
+        }
+
+        // Проверка услуги
+        if (service === "") {
+          document.getElementById("formError").textContent +=
+            "Выберите услугу. ";
+          isValid = false;
+        }
+
+        // Проверка комментариев (необязательно)
+        if (comments.length > 200) {
+          document.getElementById("formError").textContent +=
+            "Комментарий не должен превышать 200 символов. ";
+          isValid = false;
+        }
+
+        // Если форма валидна, можно отправить данные
+        if (isValid) {
+          alert("Форма успешно отправлена!");
+          // Здесь можно добавить код для отправки данных на сервер
+          // Например, используя fetch или XMLHttpRequest
+          form.reset(); // Сбросить форму после успешной отправки
+        }
+      });
+    </script>
+    <!-- Блок подвала -->
+    <section id="Podval">
+      <div class="container">
+        <div class="textcols">
+          <div class="textcols-item">
+            <p class="PodvalText">
+              Навигация по сайту <br />
+              Галерея <br />
+              Услуги <br />
+              Сертификаты <br />
+              Акции
+            </p>
+          </div>
+          <div class="textcols-item">
+            <p class="PodvalText">
+              о AFRODITA <br />
+              О нас <br />
+            </p>
+            <p class="PodvalTextTwo">
+              по вопросам сотрудничества<br />
+              Afrodita_spa@gmail.com<br />
+              + 7 (977) 606-52-52
+            </p>
+          </div>
+          <div class="textcols-item">
+            <img
+              class="imgpodval1"
+              src="./Glavnayapicture/иконкарасположение.png"
+              alt="иконкарасположение"
+            /><br />
+            <img
+              class="imgpodval"
+              src="./Glavnayapicture/иконкателефон.png"
+              alt="иконкателефон"
+            />
+            <img
+              class="imgpodval3"
+              src="./Glavnayapicture/иконкателеграмм.png"
+              alt="иконкателеграмм"
+            /><br />
+            <br />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

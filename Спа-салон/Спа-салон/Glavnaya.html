@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AFRODITA - ваш выбор</title>
+  <link rel="stylesheet" href="Glavnaya.css" />
+</head>
+
+<body>
+  <!-- Шапка сайта -->
+  <div class="container">
+    <header>
+      <img src="./Glavnayapicture/логотипAFRODITA.png" alt="LogotipAFRODITA" width="75px" height="104px" />
+      <nav>
+        <ul>
+          <li><a href="#AboutUs">О нас</a></li>
+          <li><a href="./yslygi.html">Услуги</a></li>
+          <li><a href="./Sertificates.html">Сертификаты</a></li>
+          <li><a href="./Sales.html">Акции</a></li>
+          <li><a href="Glavnaya.html#Connection">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <!-- Первый блок -->
+  <section id="Screensaver">
+    <div class="container">
+      <h1>AFRODITA</h1>
+      <p class="headertext">
+        Незабываемый спа-салон <br />
+        для красоты вашего тела
+      </p>
+      <div class="button-container">
+        <form action="./FormaZapici.html">
+          <button class="button-spa">Записаться на спа-сеанс</button>
+        </form>
+        <form action="./FormaSertificat.html">
+          <button class="button-sertificat">Купить сертификат</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const elements = document.querySelectorAll(".Slogan");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+
+      elements.forEach((element) => {
+        observer.observe(element);
+      });
+    });
+  </script>
+  <!-- Блок о нас -->
+  <div class="container">
+    <section id="AboutUs">
+      <h1 class="Heading">Проникнись особой атмосферой</h1>
+      <p class="Slogan">AFRODITA — любовь к себе начинается с твоего тела</p>
+      <div class="textcols">
+        <div class="textcols-item">
+          <img src="./Glavnayapicture/гостеприимство.png" alt="гостеприимство" />
+          <p class="Glavnpunkts">ГОСТЕПРИИМСТВО</p>
+          <p class="punkts">
+            Мы позаботились о вашем<br />
+            комфорте для полной <br />
+            сосредоточенности на отдыхе.
+          </p>
+          <img src="./Glavnayapicture/косметика.png" alt="косметика" />
+          <p class="Glavnpunkts">КОСМЕТИКА LUX</p>
+          <p class="punkts">
+            Мы используем косметику <br />европейских брендов La Sultane de
+            Saba, Thalasso Bretagne, Davines.
+          </p>
+        </div>
+        <div class="textcols-item">
+          <img src="./Glavnayapicture/персонал.png" alt="Персонал" />
+          <p class="Glavnpunkts">ПЕРСОНАЛ</p>
+          <p class="punkts">
+            У нас работают мастера с <br />
+            медицинским образованием,<br />
+            обладающие знаниями и опытом.
+          </p>
+          <img src="./Glavnayapicture/комплименты.png" alt="комплименты" />
+          <p class="Glavnpunkts">КОМПЛИМЕНТЫ</p>
+          <p class="punkts">
+            В каждый спа-сеанс включено<br />
+            чаепитие (цветочный или травяной <br />
+            чай) с различными сладостями для расслабления.
+          </p>
+        </div>
+        <div class="textcols-item">
+          <img src="./Glavnayapicture/приватность.png" alt="приватность" />
+          <p class="Glavnpunkts">ПРИВАТНОСТЬ</p>
+          <p class="punkts">
+            Вас ждет много приватных зон<br />
+            с различными средствами для<br />
+            вашего отдыха и расслабления.
+          </p>
+          <img src="./Glavnayapicture/парковка.png" alt="Парковка" />
+          <p class="Glavnpunkts">ПАРКОВКА</p>
+          <p class="punkts">
+            Напротив салона располагается просторная бесплатная парковка под
+            шлагбаумом и с круглосуточной охраной.
+          </p>
+        </div>
+      </div>
+      <div class="button-container">
+        <form action="./FormaZapici.html">
+          <button class="button-spaAB">Хочу записаться на спа-сеанс</button>
+        </form>
+        <form action="./FormaSertificat.html">
+          <button class="button-sertificatAB">Хочу купить сертификат</button>
+        </form>
+      </div>
+    </section>
+  </div>
+  <!-- /* Блок - наша команда */ -->
+  <div class="container">
+    <section id="Comand">
+      <h1 class="Heading">Наша команда</h1>
+      <div class="Personal">
+        <div>
+          <img src="./Glavnayapicture/Аннамассаж.png" alt="Аннамассаж" />
+        </div>
+        <div>
+          <p class="Glavpersonal">Анна - массажист</p>
+          <p class="punkts">
+            Специалист с более чем 7-летним опытом работы в области массажа и
+            спа-процедур. Она окончила медицинский университет, где получила
+            высшее образование в области физиотерапии. Анна специализируется
+            на расслабляющем и лечебном массаже, а также на техниках,
+            направленных на восстановление после травм. Ее внимание к деталям
+            и индивидуальный подход к каждому клиенту помогают достичь
+            максимального эффекта от процедур.
+          </p>
+        </div>
+      </div>
+      <div class="Personal">
+        <div>
+          <p class="Glavpersonal">Олег - специалист по спа-уходам</p>
+          <p class="punkts">
+            Олег имеет более 10 лет опыта в индустрии красоты и спа. Он прошел
+            обучение в лучших международных академиях и владеет современными
+            методиками ухода за кожей лица и тела. Олег специализируется на
+            антицеллюлитных программах и ингаляциях с использованием эфирных
+            масел. Его клиенты ценят его глубокие знания и умение находить
+            индивидуальный подход, что делает каждую процедуру поистине
+            уникальной.
+          </p>
+        </div>
+        <div>
+          <img src="./Glavnayapicture/Олегспец.png" alt="Олегспециалист" />
+        </div>
+      </div>
+      <div class="Personal">
+        <div>
+          <img src="./Glavnayapicture/ЮляКосметолог.png" alt="ЮляКосметолог" />
+        </div>
+        <div>
+          <p class="Glavpersonal">Юлия — квалифицированный косметолог</p>
+          <p class="punkts">
+            8-летний опыт работы. Она получила образование в области
+            косметологии и дерматологии, что позволяет ей разрабатывать
+            эффективные программы по уходу за лицом и телом. Юлия
+            специализируется на антивозрастных процедурах и инъекционной
+            косметологии, всегда следуя последним трендам в индустрии красоты.
+            Ее внимание к потребностям клиентов и стремление к качеству
+            создают атмосферу доверия и комфорт.
+          </p>
+        </div>
+      </div>
+      <div class="Personal">
+        <div>
+          <p class="Glavpersonal">Владислав - массажист</p>
+          <p class="punkts">
+            Специалист с более чем 10-летним опытом работы в области массажа и
+            спа-процедур. Он окончил медицинский университет, где получил
+            высшее образование в области физиотерапии. Владислав
+            специализируется на расслабляющем и лечебном массаже, а также на
+            техниках, направленных на восстановление после травм. Его внимание
+            к деталям и индивидуальный подход к каждому клиенту помогают
+            достичь максимального эффекта от процедур.
+          </p>
+        </div>
+        <div>
+          <img src="./Glavnayapicture/ВладМассаж.png" alt="ВладМассаж" />
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+    document.addEventListener('scroll', function () {
+      const elements = document.querySelectorAll('.Personal');
+
+      elements.forEach(element => {
+        const rect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        if (rect.top < windowHeight && rect.bottom > 0) {
+          element.classList.add('visible');
+        }
+      });
+    });
+  </script>
+  <!-- Свяжитесь с нами -->
+  <div class="container">
+    <section id="Connection">
+      <h1 class="HeadingConnect">Свяжитесь с нами</h1>
+      <div class="Icon">
+        <div class="item">
+          <img src="./Glavnayapicture/иконкарасположение.png" alt="иконкарасположение" />
+          <p class="IconText">
+            г.Москва, Кудринский переулок, 3Бс2 (бесплатная парковка)
+          </p>
+        </div>
+        <div class="item">
+          <img src="./Glavnayapicture/иконкателеграмм.png" alt="иконкателеграмм" />
+          <p class="IconText">Telegram</p>
+        </div>
+        <div class="item">
+          <img src="./Glavnayapicture/иконкавремя.png" alt="иконкавремя" />
+          <p class="IconText">Режим работы с 10:00 до 23:00</p>
+        </div>
+        <div class="item">
+          <img src="./Glavnayapicture/иконкаватсапп.png" alt="иконкаватсапп" />
+          <p class="IconText">Whatsapp</p>
+        </div>
+        <div class="item">
+          <img src="./Glavnayapicture/иконкателефон.png" alt="иконкателефон" />
+          <p class="IconText">+ 7 (555) 835-65-78</p>
+        </div>
+        <div class="item">
+          <img src="./Glavnayapicture/иконкапочта.png" alt="иконкапочта" />
+          <p class="IconText">Afrodita_spa@gmail.com</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- Карта -->
+  <section id="Map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471.17935618355074!2d37.64873292198857!3d55.822415746216116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b535d783c1ca23%3A0xb913fda440ab0893!2zRUdPLVNQQSB8INCh0J_QkC3RgdCw0LvQvtC9INCc0L7RgdC60LLQsA!5e0!3m2!1sru!2sru!4v1733334932610!5m2!1sru!2sru"
+      width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  <!-- Блок подвала -->
+  <section id="Podval">
+    <div class="container">
+      <div class="textcols">
+        <div class="textcols-item">
+          <p class="PodvalText">
+            Навигация по сайту <br />
+            Галерея <br />
+            Услуги <br />
+            Сертификаты <br />
+            Акции
+          </p>
+        </div>
+        <div class="textcols-item">
+          <p class="PodvalText">
+            о AFRODITA <br />
+            О нас <br />
+          </p>
+          <p class="PodvalTextTwo">
+            по вопросам сотрудничества<br />
+            Afrodita_spa@gmail.com<br />
+            + 7 (977) 606-52-52
+          </p>
+        </div>
+        <div class="textcols-item">
+          <img class="imgpodval1" src="./Glavnayapicture/иконкарасположение.png" alt="иконкарасположение" /><br />
+          <img class="imgpodval" src="./Glavnayapicture/иконкателефон.png" alt="иконкателефон" />
+          <img class="imgpodval3" src="./Glavnayapicture/иконкателеграмм.png" alt="иконкателеграмм" /><br />
+          <br />
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сертификаты</title>
+    <link rel="stylesheet" href="./Sertificates.css" />
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <div class="container">
+      <header>
+        <img
+          src="./Glavnayapicture/логотипAFRODITA.png"
+          alt="LogotipAFRODITA"
+          width="75px"
+          height="104px"
+        />
+        <nav>
+          <ul>
+            <li><a href="./Glavnaya.html">О нас</a></li>
+            <li><a href="./yslygi.html">Услуги</a></li>
+            <li><a href="./Sertificates.html">Сертификаты</a></li>
+            <li><a href="./Sales.html">Акции</a></li>
+            <li><a href="Glavnaya.html#Connection">Контакты</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <!-- Первый блок -->
+    <section id="Screensertificate">
+      <div class="container">
+        <h1>Подарочные сертификаты <br /></h1>
+        <p class="headertexttwo">в спа-салоне AFRODITA</p>
+        <p class="headertext">
+          ПОДАРИТЕ ОТДЫХ И УДОВОЛЬСТВИЕ <br />
+          В УЮТНОМ СПА-САЛОНЕ
+        </p>
+        <form action="./FormaSertificat.html">
+          <button class="button-sertificat">Купить сертификат</button>
+        </form>
+      </div>
+    </section>
+    <!-- Второй блок сертификатов выбор -->
+    <div class="container">
+      <section id="CheckSerificate">
+        <div class="CheckSerificate">
+          <div class="FirstSertificate">
+            <p class="FirstName">Заказать сертификат на сумму</p>
+            <p class="punkts">
+              Наш администратор перезвонит в течение 5 минут и уточнит
+              подробности получения сертификата в ближайшее время
+            </p>
+            <div class="button-container">
+              <button class="buttonprice" id="myButton">10 000₽</button>
+              <button class="buttonprice" id="myButton">15 000₽</button>
+              <button class="buttonprice" id="myButton">20 000₽</button>
+              <button class="buttonprice" id="myButton">25 000₽</button>
+              <button class="buttonprice" id="myButton">Другая ₽</button>
+            </div>
+
+            <div class="Button">
+              <form action="./FormaSertificat.html">
+                <button class="button-zakaz">Заказать</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      const buttons = document.querySelectorAll(".buttonprice");
+
+      buttons.forEach((buttonprice) => {
+        buttonprice.addEventListener("click", function () {
+          buttonprice.classList.toggle("selected");
+        });
+      });
+    </script>
+    <!-- 2 ВИДА СЕРТИФИКАТОВ -->
+    <section id="species">
+      <div class="container">
+        <p class="Heading111">2 вида оформления</p>
+        <div class="textcols">
+          <div class="textcols-item1">
+            <img
+              src="./Sertificatepicture/бумажнсертификатик.png"
+              alt="бумажнсертификатик"
+            />
+            <p class="Glavniyrext">Бумажный сертификат в наш спа-салон</p>
+            <p class="punktsVid">
+              Подарочная карта и фирменный конверт с приглашением
+            </p>
+            <div class="Buttonvid">
+              <form action="./FormaSertificat.html">
+                <button class="button-zakaz">Заказать</button>
+              </form>
+            </div>
+          </div>
+          <div class="textcols-item1">
+            <img
+              src="./Sertificatepicture/электронныйсертификатик.png"
+              alt="электронныйсертификатик"
+            />
+            <p class="Glavniyrext">Электронный сертификат в наш спа-салон</p>
+            <p class="punktsVid">
+              Фирменный бланк с приглашением отправим на WhatsApp или Telegram
+            </p>
+            <div class="Buttonvid">
+              <form action="./FormaSertificat.html">
+                <button class="button-zakaz">Заказать</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Блок подвала -->
+    <section id="Podval">
+      <div class="container">
+        <div class="textcols">
+          <div class="textcols-item">
+            <p class="PodvalText">
+              Навигация по сайту <br />
+              Галерея <br />
+              Услуги <br />
+              Сертификаты <br />
+              Акции
+            </p>
+          </div>
+          <div class="textcols-item">
+            <p class="PodvalText">
+              о AFRODITA <br />
+              О нас <br />
+            </p>
+            <p class="PodvalTextTwo">
+              по вопросам сотрудничества<br />
+              Afrodita_spa@gmail.com<br />
+              + 7 (977) 606-52-52
+            </p>
+          </div>
+          <div class="textcols-item">
+            <img
+              class="imgpodval1"
+              src="./Glavnayapicture/иконкарасположение.png"
+              alt="иконкарасположение"
+            /><br />
+            <img
+              class="imgpodval"
+              src="./Glavnayapicture/иконкателефон.png"
+              alt="иконкателефон"
+            />
+            <img
+              class="imgpodval3"
+              src="./Glavnayapicture/иконкателеграмм.png"
+              alt="иконкателеграмм"
+            /><br />
+            <br />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0px;
+  background-color: #fff6f9;
+}
+
+/* Шапка сайта */
+li {
+  font-family: "Raleway";
+  list-style: none;
+  margin-right: 40px;
+}
+
+ul {
+  display: flex;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  background-color: #efcdd6;
+  border-radius: 20px;
+  margin-top: 22px;
+  margin-bottom: 40px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#Screensaver {
+  background-image: url(./Glavnayapicture/фон.png);
+  height: 760px;
+  display: flex;
+}
+
+a {
+  color: white;
+  font-family: "Raleway";
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Первый блок */
+h1 {
+  font-family: "Raleway";
+  font-size: 96px;
+  font-weight: 700;
+  color: #efcdd6;
+  /* Цвет текста */
+  -webkit-text-stroke: 2px #ffffff;
+  /* Толщина и цвет обводки */
+  margin-top: 205px;
+  margin-bottom: 0px;
+}
+
+.headertext {
+  font-family: "Raleway";
+  font-size: 45px;
+  font-weight: 700;
+  color: #efcdd6;
+  /* Цвет текста */
+  -webkit-text-stroke: 1px #ffffff;
+  /* Толщина и цвет обводки */
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+.button-container {
+  display: flex;
+  /* Используем flexbox для размещения кнопок в ряд */
+  gap: 30px;
+  /* Промежуток между кнопками */
+}
+
+.button-spa {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 24px;
+  padding: 17px 35px;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  background-color: #efcdd6;
+  border-color: #efcdd6;
+}
+
+.button-sertificat {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 24px;
+  padding: 17px 35px;
+  text-align: center;
+  border-radius: 20px;
+  color: #efcdd6;
+  background-color: white;
+  border-color: #efcdd6;
+}
+
+/* О нас блок */
+/* Заголовок */
+.Heading {
+  font-family: "Raleway";
+  font-size: 40px;
+  font-weight: 200;
+  color: white;
+  background-color: #efcdd6;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  border-color: #efcdd6;
+}
+
+.Slogan {
+  font-family: "Raleway";
+  font-size: 32px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+
+.Slogan.visible {
+  opacity: 1;
+}
+
+/* Нужно капец */
+.textcols {
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.textcols-item {
+  white-space: normal;
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  margin-right: 65px;
+  font-size: 14px;
+}
+
+.textcols .textcols-item:last-child {
+  margin-right: 0;
+}
+
+/* Нужно капец */
+.Glavnpunkts {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.punkts {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.button-spaAB {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 24px;
+  padding: 17px 108px;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  background-color: #efcdd6;
+  border-color: #efcdd6;
+  margin-right: 30px;
+}
+
+.button-sertificatAB {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 24px;
+  padding: 17px 108px;
+  text-align: center;
+  border-radius: 20px;
+  color: #efcdd6;
+  background-color: white;
+  border-color: #efcdd6;
+}
+
+/* Блок - наша команда */
+.Personal {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 4s ease, transform 4s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.Personal div {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 60px;
+}
+
+.Glavpersonal {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+/* Свяжитесь с нами */
+.HeadingConnect {
+  font-family: "Raleway";
+  font-size: 40px;
+  font-weight: 200;
+  color: white;
+  background-color: #efcdd6;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  border-color: #efcdd6;
+}
+
+.IconText {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.Icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 20px);
+  /* Две колонки с учетом отступов */
+  padding: 10px;
+}
+
+.item img {
+  max-width: 100px;
+  /* Размер картинки */
+  margin-right: 15px;
+  /* Отступ между картинкой и текстом */
+}
+
+.item p {
+  margin: 0;
+}
+
+/* Карта */
+#Map {
+  margin-top: 60px;
+  /* background-image: url(./Glavnayapicture/карта.png); */
+  height: 758px;
+}
+
+iframe {
+  height: 758px;
+  width: 100%;
+}
+
+/* Подвал сайта */
+#Podval {
+  height: 370px;
+  background-color: #efcdd6;
+}
+
+.PodvalText {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 24px;
+  text-align: left;
+  color: #fff;
+  line-height: 45px;
+  margin-top: 60px;
+}
+
+.PodvalTextTwo {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 24px;
+  text-align: left;
+  color: #fff;
+  line-height: 40px;
+  margin-top: 40px;
+}
+
+.imgpodval {
+  margin-left: 60%;
+  margin-bottom: 20px;
+  /* margin-top: 20px; */
+}
+
+.imgpodval1 {
+  margin-top: 60px;
+  margin-left: 60%;
+  margin-bottom: 20px;
+}
+
+.imgpodval3 {
+  margin-left: 60%;
+  margin-bottom: 17px;
+}
